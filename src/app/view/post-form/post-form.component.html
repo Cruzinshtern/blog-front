@@ -1,0 +1,19 @@
+<form [formGroup]="postForm" class="post-form-component">
+  <div>
+    <label for="author">Author</label>
+    <input type="text" placeholder="Author" id="author" formControlName="author">
+  </div>
+  <div>
+    <label for="post_title">Title</label>
+    <input type="text" placeholder="Post title" id="post_title" formControlName="post_title">
+  </div>
+  <div>
+    <label for="post_text">Post text</label>
+    <textarea placeholder="You can write you thought here..." id="post_text" formControlName="post_text"></textarea>
+  </div>
+  <span class="form-btns">
+    <button type="submit" class="btn btn-outline-success">Submit</button>
+    <button type="reset" class="btn btn-outline-secondary">Secondary</button>
+  </span>
+</form>
+

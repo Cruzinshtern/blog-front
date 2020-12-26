@@ -1,0 +1,40 @@
+.post-form-component {
+  margin: 40px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  padding: 30px;
+}
+
+.post-form-component div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.post-form-component div label {
+  font-size: 40px;
+}
+
+.post-form-component div input {
+  padding: 10px;
+  width: 60vw;
+  border: thin solid #EFEFEF;
+}
+
+.post-form-component div textarea {
+  padding: 10px;
+}
+
+.form-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 40px;
+}
+
+.btn {
+  width: 120px;
+  margin: 20px;
+}
