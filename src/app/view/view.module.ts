@@ -6,13 +6,16 @@ import { PostListComponent } from './post-list/post-list.component';
 import { PostListItemComponent } from './post-list/post-list-item/post-list-item.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PostModalComponent } from './post-modal/post-modal.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { UserItemComponent } from './user-list/user-item/user-item.component';
+
 
 
 
 
 
 @NgModule({
-    declarations: [HomepageComponent, PostFormComponent, PostListComponent, PostListItemComponent, PostModalComponent],
+    declarations: [HomepageComponent, PostFormComponent, PostListComponent, PostListItemComponent, PostModalComponent, UserListComponent, UserItemComponent],
     exports: [
         HomepageComponent
     ],
