@@ -7,12 +7,12 @@ import {BehaviorSubject} from 'rxjs';
 export class ModalService {
 
   isOpen = new BehaviorSubject(false);
-  post;
+  postId: string;
 
   constructor() { }
 
-  openModal(post): void {
-    this.post = post;
+  openModal(id): void {
+    this.postId = id;
     this.isOpen.next(!this.isOpen.getValue());
   }
 

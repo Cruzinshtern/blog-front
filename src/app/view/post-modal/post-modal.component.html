@@ -1,8 +1,8 @@
 <div class="modal-bg" *ngIf="open">
   <div class="modal-content">
-    <p>{{post.author}}</p>
-    <p>{{post.post_title}}</p>
-    <p>{{post.post_text}}</p>
+    <p>{{post?.author}}</p>
+    <p>{{post?.title}}</p>
+    <p>{{post?.text}}</p>
     <button (click)="toClose()">Close</button>
   </div>
 </div>

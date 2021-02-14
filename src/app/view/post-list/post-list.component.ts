@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PostApiService } from '../../shared/service/post-api.service';
+import {PostModel} from '../../models/post.model';
 
 @Component({
   selector: 'app-post-list',
@@ -8,7 +9,7 @@ import { PostApiService } from '../../shared/service/post-api.service';
 })
 export class PostListComponent implements OnInit {
 
-  posts;
+  posts: PostModel[] = [];
 
   constructor(
     private http: PostApiService,
@@ -22,7 +23,4 @@ export class PostListComponent implements OnInit {
     );
   }
 
-  // onSelect(post): void {
-  //   console.log(post);
-  // }
 }
